@@ -1,0 +1,58 @@
+<section id="container">
+  <div class="wrapper-input">
+    <label class="label">Nome</label>
+    <input placeholder="Digite o nome" [(ngModel)]="Pedido.nome" />
+  </div>
+  <div class="wrapper-input">
+    <label class="label">Telefone</label>
+    <input placeholder="Digite o telefone" [(ngModel)]="Pedido.telefone" />
+  </div>
+  <div class="wrapper-input">
+    <label class="label">Endereço</label>
+    <input placeholder="Digite o endereço" [(ngModel)]="Pedido.endereco" />
+  </div>
+  <div class="wrapper-input">
+    <label class="label">Menu</label>
+  </div>
+  <div class="itens">
+    <div class="item">
+      <div class="item-header">
+        <input type="checkbox" [(ngModel)]="Pedido.pizza" />
+        <span class="item-label">Pizza</span>
+      </div>
+      <img class="item-img" src="../../assets/pizza.jpg" alt="pizza" />
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <input type="checkbox" [(ngModel)]="Pedido.hamburger" />
+        <span class="item-label">Hamburger</span>
+      </div>
+      <img class="item-img" src="../../assets/hamburger.jpg" alt="pizza" />
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <input type="checkbox" [(ngModel)]="Pedido.salada" />
+        <span class="item-label">Salada</span>
+      </div>
+      <img class="item-img" src="../../assets/salada.jpg" alt="pizza" />
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <input type="checkbox" [(ngModel)]="Pedido.bolo" />
+        <span class="item-label">Bolo</span>
+      </div>
+      <img class="item-img" src="../../assets/bolo.jpg" alt="pizza" />
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <input type="checkbox" [(ngModel)]="Pedido.vegano" />
+        <span class="item-label">Salada Vegana</span>
+      </div>
+      <img class="item-img" src="../../assets/vegano.jpg" alt="pizza" />
+    </div>
+  </div>
+
+  <div class="wrapper-input">
+    <button (click)="criarPedido()">Registrar Pedido</button>
+  </div>
+</section>

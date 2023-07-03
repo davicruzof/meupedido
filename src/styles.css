@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding:0;
+  font-family: Poppins;
+}
+
+input {
+  border: 2px solid #272727;
+  height: 48px;
+  background-color: transparent;
+  width: inherit;
+  border-radius: 8px;
+  padding-left: 16px;
+  color: #272727;
+}
+
+input[type="checkbox"] {
+  border: 2px solid #272727;
+  height: 24px;
+  background-color: transparent;
+  width: 24px;
+  border-radius: 8px;
+  color: #272727;
+}
+
+input:focus {
+  border: 2px solid #272727!important;
+}
+
+button {
+  background: #154580;
+  color: #ffffff;
+  max-width: 270px;
+  width: 250px;
+  padding: 1rem;
+  margin: 0 auto;
+  border: 2px solid #154580;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  border: 2px solid #84EEC1;
+  color: #84EEC1;
+}
